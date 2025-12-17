@@ -62,6 +62,14 @@ function Home() {
               <img src="/photos/homepage/capability-4.jpg" alt="Site remediation work" loading="lazy" />
               <span>Environmental Remediation & Spill Cleanup</span>
             </div>
+            <div className="credibility-item">
+              <img src="/photos/homepage/marine.jpg" alt="Marine and waterway services" loading="lazy" />
+              <span>Marine & Waterway Services</span>
+            </div>
+            <div className="credibility-item">
+              <img src="/photos/homepage/transportation.jpg" alt="Transportation and highway response" loading="lazy" />
+              <span>Transportation & Highway</span>
+            </div>
           </div>
         </div>
       </section>

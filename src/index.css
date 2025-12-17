@@ -2059,6 +2059,26 @@ section:last-child {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
+  justify-items: center;
+}
+
+/* Center last 2 items when there are 6 total */
+.credibility-grid .credibility-item:nth-child(5),
+.credibility-grid .credibility-item:nth-child(6) {
+  grid-column: span 1;
+}
+
+/* Create centered bottom row for 6 items */
+.credibility-grid {
+  justify-content: center;
+}
+
+.credibility-grid .credibility-item:nth-child(5) {
+  grid-column: 2;
+}
+
+.credibility-grid .credibility-item:nth-child(6) {
+  grid-column: 3;
 }
 
 .credibility-item {
@@ -2092,6 +2112,12 @@ section:last-child {
   .credibility-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+  }
+  
+  /* Reset grid column for mobile - all items in normal flow */
+  .credibility-grid .credibility-item:nth-child(5),
+  .credibility-grid .credibility-item:nth-child(6) {
+    grid-column: auto;
   }
 }
 
