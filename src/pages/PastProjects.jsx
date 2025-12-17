@@ -7,56 +7,45 @@ const PROJECTS = [
     location: 'Northeast Mississippi',
     scope: 'Emergency response, hazmat containment, soil remediation, and debris removal following rail incident.',
     images: [
-      '/photos/projects/project-1a.jpg',
-      '/photos/projects/project-1b.jpg'
+      '/photos/projects/rail1.jpg',
+      '/photos/projects/rail2.jpg',
+      '/photos/projects/rail3.jpg'
     ]
   },
   {
     id: 2,
-    title: 'Industrial Spill Cleanup',
+    title: 'Remediation Services',
     location: 'Central Arkansas',
-    scope: 'Containment and remediation of industrial discharge. Included excavation, disposal, and site restoration.',
+    scope: 'Environmental site remediation including soil excavation, groundwater treatment, and regulatory compliance coordination.',
     images: [
-      '/photos/projects/project-2a.jpg',
-      '/photos/projects/project-2b.jpg',
-      '/photos/projects/project-2c.jpg'
+      '/photos/projects/remediation1.jpg',
+      '/photos/projects/remediation2.jpg',
+      '/photos/projects/remediation3.jpg'
     ]
   },
   {
     id: 3,
-    title: 'Rail Yard Environmental Services',
-    location: 'West Tennessee Region',
-    scope: 'Scheduled yard cleaning, stormwater management support, and spill prevention maintenance.',
-    images: [
-      '/photos/projects/project-3a.jpg',
-      '/photos/projects/project-3b.jpg',
-      '/photos/projects/project-3c.jpg'
-    ]
-  },
-  {
-    id: 4,
     title: 'Highway Incident Response',
     location: 'Northern Mississippi',
     scope: 'Fuel spill containment and cleanup following transportation incident. Coordinated with state DOT and environmental agencies.',
     images: [
+      '/photos/projects/highway1.jpg',
       '/photos/projects/highway2.jpg',
-      '/photos/projects/highway3.jpg',
-      '/photos/projects/highway1.jpg'
+      '/photos/projects/highway3.jpg'
+    ]
+  },
+  {
+    id: 4,
+    title: 'Industrial Services',
+    location: 'Eastern Arkansas',
+    scope: 'Industrial tank cleaning, confined space entry, and proper disposal of residual materials and hazardous waste.',
+    images: [
+      '/photos/projects/facility1.jpg',
+      '/photos/projects/facility2.jpg'
     ]
   },
   {
     id: 5,
-    title: 'Facility Tank Cleaning',
-    location: 'Eastern Arkansas',
-    scope: 'Industrial tank cleaning and waste removal. Included confined space entry and proper disposal of residual materials.',
-    images: [
-      '/photos/projects/project-5a.jpg',
-      '/photos/projects/project-5b.jpg',
-      '/photos/projects/project-5c.jpg'
-    ]
-  },
-  {
-    id: 6,
     title: 'Marine Spill Response & Containment',
     location: 'Mid-South Region',
     scope: 'Multi-day marine response operation. Boom deployment, on-water product recovery, shoreline cleanup, and site remediation.',
