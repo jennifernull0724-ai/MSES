@@ -60,7 +60,7 @@ function Home() {
             </div>
             <div className="credibility-item">
               <img src="/photos/homepage/capability-4.jpg" alt="Site remediation work" loading="lazy" />
-              <span>Site Remediation</span>
+              <span>Environmental Remediation & Spill Cleanup</span>
             </div>
           </div>
         </div>
