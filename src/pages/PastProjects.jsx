@@ -41,7 +41,8 @@ const PROJECTS = [
     scope: 'Industrial tank cleaning, confined space entry, and proper disposal of residual materials and hazardous waste.',
     images: [
       '/photos/projects/facility1.jpg',
-      '/photos/projects/facility2.jpg'
+      '/photos/projects/facility2.jpg',
+      '/photos/projects/facility3.jpg'
     ]
   },
   {
