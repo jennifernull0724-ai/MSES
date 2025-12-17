@@ -39,9 +39,9 @@ const PROJECTS = [
     location: 'Northern Mississippi',
     scope: 'Fuel spill containment and cleanup following transportation incident. Coordinated with state DOT and environmental agencies.',
     images: [
-      '/photos/projects/highway1.jpg',
       '/photos/projects/highway2.jpg',
-      '/photos/projects/highway3.jpg'
+      '/photos/projects/highway3.jpg',
+      '/photos/projects/highway1.jpg'
     ]
   },
   {
