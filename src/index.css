@@ -214,6 +214,25 @@ nav a:hover {
   }
 }
 
+@media (max-width: 390px) {
+  .header-main {
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .header-logo img {
+    height: 38px;
+  }
+  
+  nav a {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8125rem;
+  }
+  
+  .header-phone {
+    font-size: 0.8125rem;
+  }
+}
+
 /* Header Accent Rules */
 .header-accent {
   max-width: 1200px;
@@ -1415,7 +1434,27 @@ section:last-child {
   .page {
     padding: 3rem 1rem 2rem;
   }
+}
 
+@media (max-width: 390px) {
+  .page {
+    padding: 2rem 0.75rem 1.5rem;
+  }
+  
+  .page-home .section-inner {
+    padding: 0 0.75rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
   .placeholder-hero {
     height: 250px;
   }
@@ -2056,6 +2095,18 @@ section:last-child {
   }
 }
 
+@media (max-width: 390px) {
+  .credibility-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .credibility-item span {
+    font-size: 0.8125rem;
+    padding: 1.5rem 0.75rem 0.5rem;
+  }
+}
+
 /* ========================================
    SERVICES PAGE - WITH IMAGES
    ======================================== */
@@ -2105,6 +2156,33 @@ section:last-child {
   
   .service-block-image {
     max-width: 400px;
+  }
+}
+
+@media (max-width: 390px) {
+  .service-block {
+    gap: 1rem;
+  }
+  
+  .service-block-image {
+    max-width: 100%;
+  }
+  
+  .service-block-content h2 {
+    font-size: 1.25rem;
+    word-wrap: break-word;
+  }
+  
+  .service-block-description {
+    font-size: 0.9375rem;
+  }
+  
+  .service-block-environments h3 {
+    font-size: 1rem;
+  }
+  
+  .service-block-environments li {
+    font-size: 0.875rem;
   }
 }
 
@@ -2232,5 +2310,32 @@ section:last-child {
   
   .project-images {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 390px) {
+  .project-entry {
+    padding: 1rem;
+  }
+  
+  .project-entry h2 {
+    font-size: 1.125rem;
+    word-wrap: break-word;
+  }
+  
+  .project-scope {
+    font-size: 0.9375rem;
+  }
+  
+  .project-image {
+    border-radius: 3px;
+  }
+  
+  .projects-cta {
+    padding: 1.5rem 1rem;
+  }
+  
+  .projects-cta p {
+    font-size: 1rem;
   }
 }
