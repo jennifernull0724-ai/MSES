@@ -2092,6 +2092,16 @@ section:last-child {
   object-fit: cover;
 }
 
+/* Industrial Services - reduce foreground, focus on work area */
+.service-block[data-service="industrial"] .service-block-image img {
+  object-position: center 30%;
+}
+
+/* Marine Services - focus on boom containment, reduce open water */
+.service-block[data-service="marine"] .service-block-image img {
+  object-position: center 70%;
+}
+
 @media (max-width: 900px) {
   .service-block,
   .service-block:nth-child(even) {
