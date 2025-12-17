@@ -47,11 +47,11 @@ function Home() {
         <div className="section-inner">
           <div className="credibility-grid">
             <div className="credibility-item">
-              <img src="/photos/homepage/capability-1.jpg" alt="Environmental response operations" loading="lazy" />
+              <img src="/photos/homepage/emergency.jpg" alt="Environmental response operations" loading="lazy" />
               <span>Emergency Response</span>
             </div>
             <div className="credibility-item">
-              <img src="/photos/homepage/capability-2.jpg" alt="Railroad environmental services" loading="lazy" />
+              <img src="/photos/homepage/railroad.jpg" alt="Railroad environmental services" loading="lazy" />
               <span>Railroad Services</span>
             </div>
             <div className="credibility-item">
