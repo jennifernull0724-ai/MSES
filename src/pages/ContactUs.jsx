@@ -4,7 +4,7 @@ function ContactUs() {
   useSEO({
     title: 'Contact Us | MSES',
     description: 'Contact Mid-South Environmental Services for environmental response, service coordination, or general inquiries. 24/7 emergency response line: 844-637-4855.',
-    canonical: 'https://mses.online/contact-us'
+    canonical: 'https://www.trexaios.com/contact-us'
   });
 
   return (

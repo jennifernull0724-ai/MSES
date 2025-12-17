@@ -33,7 +33,7 @@ function AboutUs() {
   useSEO({
     title: 'About Mid-South Environmental Services | Company Overview',
     description: 'Privately owned environmental services company supporting railroad, industrial, transportation, and marine operations across Mississippi and Arkansas.',
-    canonical: 'https://mses.online/about-us'
+    canonical: 'https://www.trexaios.com/about-us'
   });
 
   return (

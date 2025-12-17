@@ -6,7 +6,7 @@ function Home() {
   useSEO({
     title: 'Mid-South Environmental Services | Environmental & Emergency Response',
     description: 'Environmental response and remediation services supporting rail, industrial, transportation, and marine operations across the Mid-South. 24/7 emergency response available.',
-    canonical: 'https://mses.online/'
+    canonical: 'https://www.trexaios.com/'
   });
 
   return (
