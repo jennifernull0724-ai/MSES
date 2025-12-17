@@ -18,7 +18,7 @@ function Footer() {
 
         <div className="footer-social">
           <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/in/daniel-b-barrett-b9605171?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-social-link"
@@ -29,7 +29,7 @@ function Footer() {
             </svg>
           </a>
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/share/18Eb7vccQ1/?mibextid=wwXIfr"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-social-link"
