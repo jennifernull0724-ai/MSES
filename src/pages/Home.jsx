@@ -42,61 +42,39 @@ function Home() {
         </div>
       </section>
 
-      {/* Credibility Band - Work Photos */}
-      <section className="section-credibility">
-        <div className="section-inner">
-          <div className="credibility-grid">
-            <div className="credibility-item">
-              <img src="/photos/homepage/emergency.jpg" alt="Environmental response operations" loading="lazy" />
-              <span>Emergency Response</span>
-            </div>
-            <div className="credibility-item">
-              <img src="/photos/homepage/railroad.jpg" alt="Railroad environmental services" loading="lazy" />
-              <span>Railroad Services</span>
-            </div>
-            <div className="credibility-item">
-              <img src="/photos/homepage/capability-3.jpg" alt="Industrial cleaning operations" loading="lazy" />
-              <span>Industrial Services</span>
-            </div>
-            <div className="credibility-item">
-              <img src="/photos/homepage/capability-4.jpg" alt="Site remediation work" loading="lazy" />
-              <span>Environmental Remediation & Spill Cleanup</span>
-            </div>
-            <div className="credibility-item">
-              <img src="/photos/homepage/marine.jpg" alt="Marine and waterway services" loading="lazy" />
-              <span>Marine & Waterway Services</span>
-            </div>
-            <div className="credibility-item">
-              <img src="/photos/homepage/transportation.jpg" alt="Transportation and highway response" loading="lazy" />
-              <span>Transportation & Highway</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Overview Section */}
-      <section className="section-services">
+      {/* Services Section - Unified Photo Grid with Descriptions */}
+      <section className="section-services-unified">
         <div className="section-inner">
           <h2>Our Services</h2>
-          <p className="section-lead">Mid-South Environmental Services provides environmental response, remediation, cleaning, and support services for regulated operating environments.</p>
-          <div className="service-cards-grid">
-            <div className="service-type-card">
-              <h3>Emergency Spill Response</h3>
+          <p className="section-lead">Environmental response, remediation, cleaning, and support services for regulated operating environments.</p>
+          <div className="services-photo-grid">
+            <div className="service-photo-card">
+              <img src="/photos/homepage/emergency.jpg" alt="Environmental response operations" loading="lazy" />
+              <h3>Emergency Response</h3>
               <p>24/7 rapid response for hazardous material releases, containment, and remediation.</p>
             </div>
-            <div className="service-type-card">
+            <div className="service-photo-card">
+              <img src="/photos/homepage/railroad.jpg" alt="Railroad environmental services" loading="lazy" />
               <h3>Railroad Services</h3>
               <p>Derailment response, yard cleaning, and environmental support for rail operations.</p>
             </div>
-            <div className="service-type-card">
-              <h3>Industrial & Plant Services</h3>
+            <div className="service-photo-card">
+              <img src="/photos/homepage/capability-3.jpg" alt="Industrial cleaning operations" loading="lazy" />
+              <h3>Industrial Services</h3>
               <p>Facility cleaning, waste management, and environmental compliance support.</p>
             </div>
-            <div className="service-type-card">
+            <div className="service-photo-card">
+              <img src="/photos/homepage/capability-4.jpg" alt="Site remediation work" loading="lazy" />
+              <h3>Remediation & Spill Cleanup</h3>
+              <p>Site remediation, contaminated soil removal, and environmental restoration.</p>
+            </div>
+            <div className="service-photo-card">
+              <img src="/photos/homepage/marine.jpg" alt="Marine and waterway services" loading="lazy" />
               <h3>Marine & Waterway Services</h3>
               <p>Spill response, barge cleaning, and environmental services for marine operations.</p>
             </div>
-            <div className="service-type-card">
+            <div className="service-photo-card">
+              <img src="/photos/homepage/transportation.jpg" alt="Transportation and highway response" loading="lazy" />
               <h3>Transportation & Highway</h3>
               <p>Highway spill response, cargo recovery, and transportation incident support.</p>
             </div>

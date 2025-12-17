@@ -2047,7 +2047,85 @@ section:last-child {
 }
 
 /* ========================================
-   CREDIBILITY BAND - HOMEPAGE
+   UNIFIED SERVICES SECTION - HOMEPAGE
+   ======================================== */
+.section-services-unified {
+  padding: 3rem 0;
+  background-color: var(--color-gray-50);
+  margin-bottom: 0;
+}
+
+.services-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.service-photo-card {
+  background: var(--color-white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.service-photo-card img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+}
+
+.service-photo-card h3 {
+  font-size: 1.0625rem;
+  color: var(--color-primary);
+  margin: 1rem 1rem 0.5rem;
+  font-weight: 700;
+}
+
+.service-photo-card p {
+  font-size: 0.9375rem;
+  color: var(--color-gray-700);
+  margin: 0 1rem 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .services-photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-photo-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  
+  .service-photo-card h3 {
+    font-size: 1rem;
+    margin: 0.875rem 0.875rem 0.375rem;
+  }
+  
+  .service-photo-card p {
+    font-size: 0.875rem;
+    margin: 0 0.875rem 0.875rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .section-services-unified {
+    padding: 2rem 0;
+  }
+  
+  .services-photo-grid {
+    gap: 1rem;
+  }
+}
+
+/* ========================================
+   CREDIBILITY BAND - HOMEPAGE (LEGACY - can be removed if unused)
    ======================================== */
 .section-credibility {
   padding: 3rem 0;
