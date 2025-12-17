@@ -1494,6 +1494,26 @@ section:last-child {
     padding: 0 1.25rem;
   }
 
+  /* MOBILE HERO EDGE-TO-EDGE */
+  .page-home .hero-section {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+
+  .page-home .hero-image-wrapper {
+    width: 100%;
+    max-width: none;
+  }
+
+  .page-home .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
   .section-lead {
     font-size: 1rem;
     margin-bottom: 2rem;
