@@ -65,6 +65,19 @@ const SERVICES = [
       'Shoreline and bank areas',
       'Marine fueling and transfer points'
     ]
+  },
+  {
+    id: 'remediation',
+    title: 'Remediation Services',
+    image: '/photos/services/remediation.jpg',
+    description: 'Environmental remediation services addressing contaminated soil, groundwater, and impacted sites resulting from spills, releases, or historical operations. Work includes excavation, material removal, containment, treatment coordination, and site stabilization in accordance with regulatory and client requirements.',
+    environments: [
+      'Transportation corridors and right-of-way areas',
+      'Industrial and manufacturing sites',
+      'Rail yards and maintenance facilities',
+      'Shoreline, bank, and drainage areas',
+      'Spill and release impact zones'
+    ]
   }
 ];
 
