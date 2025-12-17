@@ -24,16 +24,14 @@ const TEAM = [
   { name: 'Cory Clements', title: 'Operations Manager' },
   { name: 'Jason James', title: 'Corporate Branch Manager' },
   { name: 'Amber White', title: 'Office Manager' },
-  { name: 'Michelle Holley', title: 'Billing & DOT Administrator' },
-  { name: 'AJ Johnson', title: 'AP Administrator' },
-  { name: 'William Weeks', title: 'Senior Chemist / Transportation & Disposal Coordinator' }
+  { name: 'AJ Johnson', title: 'AP Administrator' }
 ];
 
 function AboutUs() {
   useSEO({
     title: 'About Mid-South Environmental Services | Company Overview',
     description: 'Privately owned environmental services company supporting railroad, industrial, transportation, and marine operations across Mississippi and Arkansas.',
-    canonical: 'https://www.trexaios.com/about-us'
+    canonical: 'https://mses.online/about-us'
   });
 
   return (

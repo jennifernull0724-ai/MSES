@@ -85,7 +85,7 @@ function Services() {
   useSEO({
     title: 'Environmental & Industrial Services | MSES',
     description: 'Environmental response, remediation, and cleanup services for railroad, industrial, transportation, and marine operations. Serving the Mid-South region.',
-    canonical: 'https://www.trexaios.com/services'
+    canonical: 'https://mses.online/services'
   });
 
   return (

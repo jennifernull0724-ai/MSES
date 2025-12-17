@@ -1,7 +1,7 @@
 # robots.txt for Mid-South Environmental Services
-# https://www.trexaios.com
+# https://mses.online
 
 User-agent: *
 Allow: /
 
-Sitemap: https://www.trexaios.com/sitemap.xml
+Sitemap: https://mses.online/sitemap.xml

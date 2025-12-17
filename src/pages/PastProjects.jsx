@@ -57,7 +57,7 @@ function PastProjects() {
   useSEO({
     title: 'Past Projects | MSES',
     description: 'Representative environmental response, railroad services, and industrial work performed by Mid-South Environmental Services.',
-    canonical: 'https://www.trexaios.com/past-projects'
+    canonical: 'https://mses.online/past-projects'
   });
 
   return (

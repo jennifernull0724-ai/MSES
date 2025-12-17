@@ -9,7 +9,7 @@ function Locations() {
   useSEO({
     title: 'Service Locations | MSES',
     description: 'Mid-South Environmental Services operates from locations in Mississippi and Arkansas including Southaven, Jacksonville, Texarkana, and Fulton. Regional coverage for emergency response.',
-    canonical: 'https://www.trexaios.com/locations'
+    canonical: 'https://mses.online/locations'
   });
 
   // Handle hash navigation from other pages
