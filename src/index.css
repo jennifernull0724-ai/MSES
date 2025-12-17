@@ -2206,6 +2206,11 @@ section:last-child {
   background-color: var(--color-gray-100);
 }
 
+/* Adjust rail3 image positioning - move right and down */
+.project-image[src*="rail3"] {
+  object-position: 70% 60%;
+}
+
 .projects-cta {
   text-align: center;
   margin-top: 3rem;
