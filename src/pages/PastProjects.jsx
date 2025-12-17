@@ -4,8 +4,7 @@ const PROJECTS = [
   {
     id: 1,
     title: 'Railroad Derailment Response',
-    location: 'Northeast Mississippi',
-    scope: 'Emergency response, hazmat containment, soil remediation, and debris removal following rail incident.',
+    scope: 'Representative emergency response work including hazmat containment, contaminated ballast removal, soil remediation, and debris clearing following rail incidents.',
     images: [
       '/photos/projects/rail1.jpg',
       '/photos/projects/rail2.jpg',
@@ -15,8 +14,7 @@ const PROJECTS = [
   {
     id: 2,
     title: 'Environmental Remediation & Spill Cleanup',
-    location: 'Central Arkansas',
-    scope: 'Environmental site remediation including soil excavation, groundwater treatment, and regulatory compliance coordination.',
+    scope: 'Typical remediation scope including soil excavation, groundwater assessment support, waste profiling, and coordination with regulatory compliance requirements.',
     images: [
       '/photos/projects/remediation1.jpg',
       '/photos/projects/remediation2.jpg',
@@ -26,8 +24,7 @@ const PROJECTS = [
   {
     id: 3,
     title: 'Highway Incident Response',
-    location: 'Northern Mississippi',
-    scope: 'Fuel spill containment and cleanup following transportation incident. Coordinated with state DOT and environmental agencies.',
+    scope: 'Representative transportation incident work including fuel spill containment, product recovery, contaminated material removal, and coordination with DOT and environmental agencies.',
     images: [
       '/photos/projects/highway1.jpg',
       '/photos/projects/highway2.jpg',
@@ -37,8 +34,7 @@ const PROJECTS = [
   {
     id: 4,
     title: 'Industrial Services',
-    location: 'Eastern Arkansas',
-    scope: 'Industrial tank cleaning, confined space entry, and proper disposal of residual materials and hazardous waste.',
+    scope: 'Typical industrial service scope including tank cleaning, confined space entry, secondary containment maintenance, and proper disposal of residual materials.',
     images: [
       '/photos/projects/facility1.jpg',
       '/photos/projects/facility2.jpg',
@@ -48,8 +44,7 @@ const PROJECTS = [
   {
     id: 5,
     title: 'Marine Spill Response & Containment',
-    location: 'Mid-South Region',
-    scope: 'Multi-day marine response operation. Boom deployment, on-water product recovery, shoreline cleanup, and site remediation.',
+    scope: 'Representative marine response work including boom deployment, on-water product recovery, shoreline cleanup, and coordinated site remediation.',
     images: [
       '/photos/projects/project-6a.jpg',
       '/photos/projects/project-6b.jpg',
@@ -61,7 +56,7 @@ const PROJECTS = [
 function PastProjects() {
   useSEO({
     title: 'Past Projects | MSES',
-    description: 'View completed environmental response, railroad services, and industrial projects by Mid-South Environmental Services across the Mid-South region.',
+    description: 'Representative environmental response, railroad services, and industrial work performed by Mid-South Environmental Services.',
     canonical: 'https://www.trexaios.com/past-projects'
   });
 
@@ -69,7 +64,7 @@ function PastProjects() {
     <div className="page page-projects">
       <section className="page-header">
         <h1>Past Projects</h1>
-        <p className="page-intro">A selection of completed work across environmental response, railroad services, and industrial operations throughout the Mid-South region.</p>
+        <p className="page-intro">Representative examples of work performed across environmental response, railroad services, and industrial operations.</p>
       </section>
 
       <section className="projects-list">
@@ -77,7 +72,6 @@ function PastProjects() {
           <article key={project.id} className="project-entry">
             <div className="project-info">
               <h2>{project.title}</h2>
-              <p className="project-location">{project.location}</p>
               <p className="project-scope">{project.scope}</p>
             </div>
             <div className="project-images">
