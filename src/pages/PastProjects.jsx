@@ -56,9 +56,9 @@ const PROJECTS = [
   },
   {
     id: 6,
-    title: 'Emergency Environmental Response',
+    title: 'Marine Spill Response & Containment',
     location: 'Mid-South Region',
-    scope: 'Multi-day emergency response operation. Soil excavation, contaminated material transport, and site remediation.',
+    scope: 'Multi-day marine response operation. Boom deployment, on-water product recovery, shoreline cleanup, and site remediation.',
     images: [
       '/photos/projects/project-6a.jpg',
       '/photos/projects/project-6b.jpg',
