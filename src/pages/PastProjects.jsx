@@ -14,7 +14,7 @@ const PROJECTS = [
   },
   {
     id: 2,
-    title: 'Remediation Services',
+    title: 'Environmental Remediation & Spill Cleanup',
     location: 'Central Arkansas',
     scope: 'Environmental site remediation including soil excavation, groundwater treatment, and regulatory compliance coordination.',
     images: [
