@@ -1,12 +1,29 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Map from '../components/Map';
 import { useSEO } from '../hooks/useSEO';
 
 function Locations() {
+  const location = useLocation();
+
   useSEO({
     title: 'Service Locations | MSES',
     description: 'Mid-South Environmental Services operates from locations in Mississippi and Arkansas including Southaven, Jacksonville, Texarkana, and Fulton. Regional coverage for emergency response.',
     canonical: 'https://mses.online/locations'
   });
+
+  // Handle hash navigation from other pages
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 100);
+      }
+    }
+  }, [location.hash]);
 
   return (
     <div className="page">
@@ -16,13 +33,14 @@ function Locations() {
       </section>
 
       <section>
+        <p className="map-helper-text">Regional Coverage</p>
         <Map />
       </section>
 
       <section>
         <h2>Office & Response Locations</h2>
         <div className="locations-grid">
-          <div className="location-card">
+          <div className="location-card" id="location-southaven">
             <h3>Corporate Office</h3>
             <address>
               8465 Hamilton Rd<br />
@@ -30,7 +48,7 @@ function Locations() {
             </address>
           </div>
 
-          <div className="location-card">
+          <div className="location-card" id="location-jacksonville">
             <h3>Little Rock / Jacksonville, AR</h3>
             <address>
               2600 W Main St<br />
@@ -38,7 +56,7 @@ function Locations() {
             </address>
           </div>
 
-          <div className="location-card">
+          <div className="location-card" id="location-texarkana">
             <h3>Texarkana, AR</h3>
             <address>
               3939 E Ninth St<br />
@@ -46,7 +64,7 @@ function Locations() {
             </address>
           </div>
 
-          <div className="location-card">
+          <div className="location-card" id="location-fulton">
             <h3>Fulton, MS</h3>
             <address>
               100 Access Rd<br />

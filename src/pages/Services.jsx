@@ -1,5 +1,67 @@
-import { Link } from 'react-router-dom';
 import { useSEO } from '../hooks/useSEO';
+
+const SERVICES = [
+  {
+    id: 'environmental',
+    title: 'Environmental Services',
+    description: 'Comprehensive spill response, containment, remediation, and material handling for environmental incidents requiring immediate action. We handle product recovery, contaminated soil excavation, vacuum services, and waste profiling from initial response through site restoration.',
+    environments: [
+      'Railroad yards, sidings, and right-of-way',
+      'Industrial facilities and process areas',
+      'Highway and roadway incident sites',
+      'Terminals, storage yards, and transfer points',
+      'Shorelines and inland waterways'
+    ]
+  },
+  {
+    id: 'railroad',
+    title: 'Railroad Services',
+    description: 'Environmental response and operational support for rail environments including yards, mainlines, sidings, and derailment incidents. We coordinate with dispatchers and roadmasters to handle fuel spills, contaminated ballast removal, tank car cleaning, and right-of-way remediation without creating operational delays.',
+    environments: [
+      'Classification yards and switching operations',
+      'Mainline and branch line right-of-way',
+      'Fueling facilities and maintenance shops',
+      'Industrial spurs and customer sidings',
+      'Intermodal terminals'
+    ]
+  },
+  {
+    id: 'industrial',
+    title: 'Industrial Services',
+    description: 'Environmental and cleaning services that work around your operations. Whether it\'s a spill requiring immediate attention or scheduled maintenance that can\'t slip, we bring crews and equipment to handle tank cleaning, containment area maintenance, process area remediation, and turnaround support without disrupting production.',
+    environments: [
+      'Manufacturing plants and production floors',
+      'Refineries and processing facilities',
+      'Chemical storage and handling areas',
+      'Tank farms and bulk terminals',
+      'Maintenance shops and wash bays'
+    ]
+  },
+  {
+    id: 'transportation',
+    title: 'Transportation Services',
+    description: 'Roadway incident response with speed and control—containing releases, recovering product, and clearing scenes so traffic and operations can resume. We handle highway spill response, fuel and cargo containment, contaminated soil removal, and site restoration with full waste transport coordination.',
+    environments: [
+      'Interstate and highway incident scenes',
+      'Truck stops and fueling stations',
+      'Freight terminals and distribution centers',
+      'Transfer facilities and staging areas',
+      'Loading docks and cargo handling zones'
+    ]
+  },
+  {
+    id: 'marine',
+    title: 'Marine Services',
+    description: 'Marine spill response, containment, and recovery services for operations along rivers, ports, and transfer facilities. We deploy boom containment, perform on-water product recovery, shoreline cleanup, and coordinate with facility response plans for vessel and barge incidents.',
+    environments: [
+      'Rivers and inland waterways',
+      'Barge and vessel loading facilities',
+      'Port terminals and docks',
+      'Shoreline and bank areas',
+      'Marine fueling and transfer points'
+    ]
+  }
+];
 
 function Services() {
   useSEO({
@@ -9,49 +71,35 @@ function Services() {
   });
 
   return (
-    <div className="page">
-      <section>
+    <div className="page page-services">
+      <section className="services-intro">
         <h1>Environmental & Operational Services</h1>
-        <p>Mid-South Environmental Services provides field-executed environmental response and support services for regulated operating environments where timing, coordination, and execution matter. Services are delivered by experienced personnel supporting emergency response and planned operations across rail, industrial, transportation, and marine environments.</p>
+        <p className="services-intro-text">Mid-South Environmental Services provides field-executed environmental response and support services for regulated operating environments where timing, coordination, and execution matter.</p>
+        <p className="services-intro-subtext">Services are delivered by experienced personnel supporting emergency response and planned operations across rail, industrial, transportation, and marine environments.</p>
       </section>
 
-      <section>
-        <div className="service-areas">
-          <div className="service-area-card">
-            <h3>Environmental Services</h3>
-            <p>Spill response, containment, cleanup, remediation, vacuum services, and material handling support for environmental incidents and maintenance activities.</p>
-            <Link to="/services/environmental-services" className="service-link">Learn More →</Link>
-          </div>
-
-          <div className="service-area-card">
-            <h3>Railroad Services</h3>
-            <p>Environmental response and cleanup for rail operations, including yards, right-of-way, derailments, ballast work, and coordination within active rail environments.</p>
-            <Link to="/services/railroad-services" className="service-link">Learn More →</Link>
-          </div>
-
-          <div className="service-area-card">
-            <h3>Industrial Services</h3>
-            <p>Environmental response, tank and containment support, and cleanup services for industrial facilities that cannot afford downtime or disruption.</p>
-            <Link to="/services/industrial-services" className="service-link">Learn More →</Link>
-          </div>
-
-          <div className="service-area-card">
-            <h3>Transportation Services</h3>
-            <p>Roadway incident response, material recovery, and environmental support for transportation-related spills and releases.</p>
-            <Link to="/services/transportation-services" className="service-link">Learn More →</Link>
-          </div>
-
-          <div className="service-area-card">
-            <h3>Marine Services</h3>
-            <p>Spill response and environmental support for inland waterways, shorelines, and marine-adjacent operations.</p>
-            <Link to="/services/marine-services" className="service-link">Learn More →</Link>
-          </div>
+      <section className="services-consolidated">
+        <div className="services-consolidated-inner">
+          {SERVICES.map((service) => (
+            <div key={service.id} className="service-block">
+              <h2>{service.title}</h2>
+              <p className="service-block-description">{service.description}</p>
+              <div className="service-block-environments">
+                <h3>Where This Work Happens</h3>
+                <ul>
+                  {service.environments.map((env, index) => (
+                    <li key={index}>{env}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
-      <section>
-        <p className="closing-text">Each service area is supported by experienced field personnel and coordinated directly with client operations.</p>
-        <p className="cta-line">For immediate response or service coordination, call <a href="tel:844-637-4855">844-637-4855</a>.</p>
+      <section className="services-cta-section">
+        <p className="services-cta-text">Each service area is supported by experienced field personnel and coordinated directly with client operations.</p>
+        <a href="tel:844-637-4855" className="btn btn-primary">Call 24/7 Emergency Response — 844-637-4855</a>
       </section>
     </div>
   );

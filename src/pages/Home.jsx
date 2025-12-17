@@ -10,10 +10,13 @@ function Home() {
   });
 
   return (
-    <div className="page">
+    <div className="page page-home">
       {/* Hero Section */}
       <section className="hero-section">
-        <img src="/mseshero.png" alt="MSES emergency response operations" className="hero-image" />
+        <div className="hero-image-wrapper">
+          <img src="/newhero.png" alt="MSES emergency response operations" className="hero-image" />
+          <Link to="/services" className="hero-image-link" aria-label="View Services"></Link>
+        </div>
         <div className="hero-content">
           <h1>Environmental Response & Industrial Services When It Matters Most</h1>
           <p className="subheadline">Privately owned environmental services supporting railroad, industrial, transportation, and marine operations across the Mid-South.</p>
@@ -26,57 +29,79 @@ function Home() {
       </section>
 
       {/* Why Clients Call Us Section */}
-      <section>
-        <h2>Why Clients Call Mid-South Environmental Services</h2>
-        <ul className="benefits-list">
-          <li>Direct access to decision-makers</li>
-          <li>Rapid response without layers of approval</li>
-          <li>Experience in regulated, high-risk environments</li>
-          <li>Clear communication during time-sensitive situations</li>
-          <li>Support from initial response through resolution</li>
-        </ul>
+      <section className="section-why">
+        <div className="section-inner">
+          <h2>Why Clients Call Mid-South Environmental Services</h2>
+          <ul className="benefits-list">
+            <li>Direct access to decision-makers</li>
+            <li>Rapid response without layers of approval</li>
+            <li>Experience in regulated, high-risk environments</li>
+            <li>Clear communication during time-sensitive situations</li>
+            <li>Support from initial response through resolution</li>
+          </ul>
+        </div>
       </section>
 
       {/* Services Overview Section */}
-      <section>
-        <h2>Our Services</h2>
-        <p>Mid-South Environmental Services provides environmental response, remediation, cleaning, and support services for regulated operating environments. Services are performed with a focus on safety, containment, and coordination with client requirements.</p>
-        <div className="services-grid">
-          <div className="placeholder placeholder-service">Service Category Image Placeholder — Environmental Services</div>
-          <div className="placeholder placeholder-service">Service Category Image Placeholder — Railroad Services</div>
-          <div className="placeholder placeholder-service">Service Category Image Placeholder — Industrial Services</div>
-          <div className="placeholder placeholder-service">Service Category Image Placeholder — Transportation Services</div>
-          <div className="placeholder placeholder-service">Service Category Image Placeholder — Marine Services</div>
-        </div>
-        <div className="section-cta">
-          <Link to="/services" className="btn btn-secondary">View All Services</Link>
+      <section className="section-services">
+        <div className="section-inner">
+          <h2>Our Services</h2>
+          <p className="section-lead">Mid-South Environmental Services provides environmental response, remediation, cleaning, and support services for regulated operating environments.</p>
+          <div className="service-cards-grid">
+            <div className="service-type-card">
+              <h3>Emergency Spill Response</h3>
+              <p>24/7 rapid response for hazardous material releases, containment, and remediation.</p>
+            </div>
+            <div className="service-type-card">
+              <h3>Railroad Services</h3>
+              <p>Derailment response, yard cleaning, and environmental support for rail operations.</p>
+            </div>
+            <div className="service-type-card">
+              <h3>Industrial & Plant Services</h3>
+              <p>Facility cleaning, waste management, and environmental compliance support.</p>
+            </div>
+            <div className="service-type-card">
+              <h3>Marine & Waterway Services</h3>
+              <p>Spill response, barge cleaning, and environmental services for marine operations.</p>
+            </div>
+            <div className="service-type-card">
+              <h3>Transportation & Highway</h3>
+              <p>Highway spill response, cargo recovery, and transportation incident support.</p>
+            </div>
+          </div>
+          <div className="section-cta">
+            <Link to="/services" className="btn btn-secondary">View All Services</Link>
+          </div>
         </div>
       </section>
 
       {/* What to Expect Section */}
-      <section>
-        <h2>What to Expect When You Call</h2>
-        <ol className="steps-list">
-          <li>Immediate intake and situation assessment</li>
-          <li>Coordination with site, facility, or railroad personnel</li>
-          <li>Mobilization of appropriate response resources</li>
-          <li>On-site support and containment activities</li>
-          <li>Ongoing coordination as required</li>
-        </ol>
+      <section className="section-expect">
+        <div className="section-inner">
+          <h2>What to Expect When You Call</h2>
+          <ol className="steps-list">
+            <li>Immediate intake and situation assessment</li>
+            <li>Coordination with site, facility, or railroad personnel</li>
+            <li>Mobilization of appropriate response resources</li>
+            <li>On-site support and containment activities</li>
+            <li>Ongoing coordination as required</li>
+          </ol>
+        </div>
       </section>
 
       {/* Locations Section */}
-      <section>
-        <h2>Serving the Mid-South Region</h2>
-        <p>Mid-South Environmental Services provides regional coverage across Mississippi and Arkansas, supporting emergency response and planned operations for railroads, industrial facilities, transportation operations, and marine environments.</p>
-        <Map />
-        <ul className="locations-list">
-          <li><strong>Corporate Office</strong> — 8465 Hamilton Rd, Southaven, MS 38671</li>
-          <li><strong>Little Rock / Jacksonville, AR</strong> — 2600 W Main St, Jacksonville, AR 72076</li>
-          <li><strong>Texarkana, AR</strong> — 3939 E Ninth St, Texarkana, AR 71854</li>
-          <li><strong>Fulton, MS</strong> — 100 Access Rd, Fulton, MS 38843</li>
-        </ul>
-        <p className="coverage-note">Additional response coverage available throughout the Mid-South region.</p>
+      <section className="section-locations">
+        <div className="section-inner">
+          <h2>Serving the Mid-South Region</h2>
+          <p className="section-lead">Regional coverage across Mississippi and Arkansas, supporting emergency response and planned operations for railroads, industrial facilities, transportation, and marine environments.</p>
+          <Map />
+          <ul className="locations-list">
+            <li><strong>Corporate Office</strong> — 8465 Hamilton Rd, Southaven, MS 38671</li>
+            <li><strong>Little Rock / Jacksonville, AR</strong> — 2600 W Main St, Jacksonville, AR 72076</li>
+            <li><strong>Texarkana, AR</strong> — 3939 E Ninth St, Texarkana, AR 71854</li>
+            <li><strong>Fulton, MS</strong> — 100 Access Rd, Fulton, MS 38843</li>
+          </ul>
+        </div>
       </section>
 
       {/* Final CTA Section */}

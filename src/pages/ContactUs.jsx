@@ -42,7 +42,7 @@ function ContactUs() {
             <label htmlFor="message">Message</label>
             <textarea id="message" name="message" rows="5" required></textarea>
           </div>
-          <button type="submit" className="btn btn-primary">Send Message</button>
+          <button type="submit" className="btn btn-secondary">Send Message</button>
         </form>
         <p className="form-note">For urgent matters, please call our 24/7 emergency line. For general inquiries submitted via this form, we aim to respond as promptly as possible, typically within one business day.</p>
       </section>
