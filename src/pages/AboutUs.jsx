@@ -10,14 +10,10 @@ function AboutUs() {
   return (
     <div className="page">
       <section>
-        <div className="placeholder placeholder-company">Company Operations Image Placeholder</div>
-      </section>
-
-      <section>
         <h1>About Mid-South Environmental Services</h1>
-        <p>Mid-South Environmental Services is a privately owned environmental services company supporting regulated operating environments across the Mid-South. The company provides environmental response, remediation, and support services for railroad, industrial, transportation, and marine operations.</p>
-        <p>Services are performed with a focus on safety, containment, and coordination with client requirements. As an owner-led operation, Mid-South Environmental Services provides direct access to experienced personnel and clear communication during both emergency response and planned work.</p>
-        <p>The company supports clients from initial response through resolution, delivering practical, field-driven solutions without unnecessary delays or layers of approval.</p>
+        <p>Mid-South Environmental Services is a privately owned environmental response and support company serving regulated operating environments across the Mid-South. The company provides field-executed environmental services for railroad, industrial, transportation, and marine operations where timing, coordination, and control matter.</p>
+        <p>Operations are led by experienced personnel with direct involvement in both emergency response and planned work. Services are delivered with a practical focus on containment, site coordination, and safe execution, supporting client requirements without unnecessary delays or layers of approval.</p>
+        <p>Mid-South Environmental Services supports clients from initial response through resolution, working alongside operations, compliance, and site personnel to manage environmental incidents and maintenance activities efficiently. The company's approach is grounded in real-world field experience, clear communication, and accountability at every stage of the work.</p>
       </section>
     </div>
   );
