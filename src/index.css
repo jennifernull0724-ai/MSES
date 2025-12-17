@@ -2006,3 +2006,226 @@ section:last-child {
     justify-content: center;
   }
 }
+
+/* ========================================
+   CREDIBILITY BAND - HOMEPAGE
+   ======================================== */
+.section-credibility {
+  padding: 3rem 0;
+  background-color: var(--color-gray-50);
+  margin-bottom: 0;
+}
+
+.credibility-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.credibility-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  aspect-ratio: 4/3;
+}
+
+.credibility-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.credibility-item span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(6, 54, 122, 0.85));
+  color: var(--color-white);
+  padding: 2rem 1rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .credibility-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* ========================================
+   SERVICES PAGE - WITH IMAGES
+   ======================================== */
+.service-block {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.service-block:nth-child(even) {
+  grid-template-columns: 300px 1fr;
+}
+
+.service-block:nth-child(even) .service-block-image {
+  order: -1;
+}
+
+.service-block-content {
+  flex: 1;
+}
+
+.service-block-image {
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-block-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .service-block,
+  .service-block:nth-child(even) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .service-block:nth-child(even) .service-block-image {
+    order: 0;
+  }
+  
+  .service-block-image {
+    max-width: 400px;
+  }
+}
+
+/* ========================================
+   ABOUT PAGE - PHOTOS
+   ======================================== */
+.about-photos {
+  margin-bottom: 3rem;
+}
+
+.about-photos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.about-photos-grid img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 600px) {
+  .about-photos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========================================
+   PAST PROJECTS PAGE
+   ======================================== */
+.page-projects .page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-projects .page-header h1 {
+  margin-bottom: 1rem;
+}
+
+.page-intro {
+  font-size: 1.125rem;
+  color: var(--color-gray-700);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.project-entry {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.project-info {
+  margin-bottom: 1.5rem;
+}
+
+.project-info h2 {
+  font-size: 1.375rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-location {
+  font-size: 0.9375rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.project-scope {
+  color: var(--color-gray-700);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 4px;
+  background-color: var(--color-gray-100);
+}
+
+.projects-cta {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2.5rem;
+  background-color: var(--color-gray-50);
+  border-radius: 8px;
+}
+
+.projects-cta p {
+  font-size: 1.125rem;
+  color: var(--color-gray-700);
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 600px) {
+  .project-entry {
+    padding: 1.5rem;
+  }
+  
+  .project-images {
+    grid-template-columns: 1fr;
+  }
+}

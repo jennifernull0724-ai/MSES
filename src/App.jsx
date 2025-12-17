@@ -8,6 +8,7 @@ import AboutUs from './pages/AboutUs';
 import Services from './pages/Services';
 import Locations from './pages/Locations';
 import ContactUs from './pages/ContactUs';
+import PastProjects from './pages/PastProjects';
 
 // GA4 Analytics Hook
 function useGA4PageTracking() {
@@ -44,6 +45,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/locations" element={<Locations />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/past-projects" element={<PastProjects />} />
         </Routes>
       </AppLayout>
     </BrowserRouter>

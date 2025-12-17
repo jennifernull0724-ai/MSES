@@ -4,6 +4,7 @@ const SERVICES = [
   {
     id: 'environmental',
     title: 'Environmental Services',
+    image: '/photos/services/environmental.jpg',
     description: 'Comprehensive spill response, containment, remediation, and material handling for environmental incidents requiring immediate action. We handle product recovery, contaminated soil excavation, vacuum services, and waste profiling from initial response through site restoration.',
     environments: [
       'Railroad yards, sidings, and right-of-way',
@@ -16,6 +17,7 @@ const SERVICES = [
   {
     id: 'railroad',
     title: 'Railroad Services',
+    image: '/photos/services/railroad.jpg',
     description: 'Environmental response and operational support for rail environments including yards, mainlines, sidings, and derailment incidents. We coordinate with dispatchers and roadmasters to handle fuel spills, contaminated ballast removal, tank car cleaning, and right-of-way remediation without creating operational delays.',
     environments: [
       'Classification yards and switching operations',
@@ -28,6 +30,7 @@ const SERVICES = [
   {
     id: 'industrial',
     title: 'Industrial Services',
+    image: '/photos/services/industrial.jpg',
     description: 'Environmental and cleaning services that work around your operations. Whether it\'s a spill requiring immediate attention or scheduled maintenance that can\'t slip, we bring crews and equipment to handle tank cleaning, containment area maintenance, process area remediation, and turnaround support without disrupting production.',
     environments: [
       'Manufacturing plants and production floors',
@@ -40,6 +43,7 @@ const SERVICES = [
   {
     id: 'transportation',
     title: 'Transportation Services',
+    image: '/photos/services/transportation.jpg',
     description: 'Roadway incident response with speed and control—containing releases, recovering product, and clearing scenes so traffic and operations can resume. We handle highway spill response, fuel and cargo containment, contaminated soil removal, and site restoration with full waste transport coordination.',
     environments: [
       'Interstate and highway incident scenes',
@@ -52,6 +56,7 @@ const SERVICES = [
   {
     id: 'marine',
     title: 'Marine Services',
+    image: '/photos/services/marine.jpg',
     description: 'Marine spill response, containment, and recovery services for operations along rivers, ports, and transfer facilities. We deploy boom containment, perform on-water product recovery, shoreline cleanup, and coordinate with facility response plans for vessel and barge incidents.',
     environments: [
       'Rivers and inland waterways',
@@ -82,15 +87,20 @@ function Services() {
         <div className="services-consolidated-inner">
           {SERVICES.map((service) => (
             <div key={service.id} className="service-block">
-              <h2>{service.title}</h2>
-              <p className="service-block-description">{service.description}</p>
-              <div className="service-block-environments">
-                <h3>Where This Work Happens</h3>
-                <ul>
-                  {service.environments.map((env, index) => (
-                    <li key={index}>{env}</li>
-                  ))}
-                </ul>
+              <div className="service-block-content">
+                <h2>{service.title}</h2>
+                <p className="service-block-description">{service.description}</p>
+                <div className="service-block-environments">
+                  <h3>Where This Work Happens</h3>
+                  <ul>
+                    {service.environments.map((env, index) => (
+                      <li key={index}>{env}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div className="service-block-image">
+                <img src={service.image} alt={service.title} loading="lazy" />
               </div>
             </div>
           ))}

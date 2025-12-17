@@ -47,6 +47,13 @@ function AboutUs() {
         <p>Mid-South Environmental Services supports clients from initial response through resolution, working alongside operations, compliance, and site personnel to manage environmental incidents and maintenance activities efficiently. The company's approach is grounded in real-world field experience, clear communication, and direct accountability at every stage.</p>
       </section>
 
+      <section className="about-photos">
+        <div className="about-photos-grid">
+          <img src="/photos/about/team-1.jpg" alt="MSES team in the field" loading="lazy" />
+          <img src="/photos/about/operations-1.jpg" alt="MSES operations and equipment" loading="lazy" />
+        </div>
+      </section>
+
       <section className="about-leadership">
         <div className="about-leadership-inner">
           <h2>Owner-Led Operations</h2>

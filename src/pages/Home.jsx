@@ -42,6 +42,30 @@ function Home() {
         </div>
       </section>
 
+      {/* Credibility Band - Work Photos */}
+      <section className="section-credibility">
+        <div className="section-inner">
+          <div className="credibility-grid">
+            <div className="credibility-item">
+              <img src="/photos/homepage/capability-1.jpg" alt="Environmental response operations" loading="lazy" />
+              <span>Emergency Response</span>
+            </div>
+            <div className="credibility-item">
+              <img src="/photos/homepage/capability-2.jpg" alt="Railroad environmental services" loading="lazy" />
+              <span>Railroad Services</span>
+            </div>
+            <div className="credibility-item">
+              <img src="/photos/homepage/capability-3.jpg" alt="Industrial cleaning operations" loading="lazy" />
+              <span>Industrial Services</span>
+            </div>
+            <div className="credibility-item">
+              <img src="/photos/homepage/capability-4.jpg" alt="Site remediation work" loading="lazy" />
+              <span>Site Remediation</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Overview Section */}
       <section className="section-services">
         <div className="section-inner">
